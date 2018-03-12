@@ -102,6 +102,23 @@
         <a class="button" href="#">KVN</a>
       </p>
     </footer>
-
+    <section class="modal modal-login">
+      <h2>Личный кабинет</h2>
+      <p>Введите пожалуйста свой логин и пароль</p>
+      <form class="login-form" action="https://echo.google.com"
+      method="post">
+        <p>
+          <input class="login-icon-user" type="text" name="login" placeholder="Логин">
+          <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+          <input type="checkbox" name="remember" class="visually-hidden">
+          Запомните меня
+          <a class="restore" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button" type="submit">Войти</button>
+      </form>
+      <span class="modal-close">x</span>
+    </section>
   </body>
 </html>
