@@ -2,13 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Набор для путешествий «Baxter of california»</title>
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/index-logo.svg" width="368" height="153"
+          <img src="img/logo.svg" width="111" height="24"
           alt="Логотип барбершопа «Бородинский»">
         </a>
         <ul class="site-navigation">
@@ -19,7 +22,9 @@
           <li><a href="contacts.html">КОНТАКТЫ</a></li>
         </ul>
         <ul class="user-navigations">
-          <li class="login-link">ВХОД</li>
+          <li class="login-link">
+            <a class="login-link" href="login.html">ВХОД</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -41,11 +46,11 @@
         </ul>
       <section class="product-image">
         <h2 class="visually-hidden">Изображение товара</h2>
-        <p>
+        <p class="product-photo-full">
           <img src="img/product-image-1.jpg" width="400" height="400"
             alt="Набор для путешествий «Baxter of california»">
         </p>
-        <ul class="product-image-list">
+        <ul class="product-photo-preview">
           <li class="product-image">
             <img src="img/product-image-2.jpg" width="100" height="100"
               alt="Набор для путешествий «Baxter of california»">
@@ -108,17 +113,30 @@
       <form class="login-form" action="https://echo.google.com"
       method="post">
         <p>
-          <input class="login-icon-user" type="text" name="login" placeholder="Логин">
-          <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
         </p>
         <p class="login-password-info">
-          <input type="checkbox" name="remember" class="visually-hidden">
-          Запомните меня
+          <label class="login-checkbox">
+            <input type="checkbox" name="remember" class="visually-hidden">
+            Запомните меня
+          </label>
           <a class="restore" href="#">Я забыл пароль!</a>
         </p>
         <button class="button" type="submit">Войти</button>
       </form>
-      <span class="modal-close">x</span>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map.jpg" width="780" hegth="560" alt="Офис компании по адрессу ул.Большая Конюшенная 19/8, Санкт-петербург">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
